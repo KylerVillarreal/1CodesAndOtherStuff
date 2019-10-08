@@ -44,8 +44,22 @@ print(end1 + end2 + end3 +end4 + end5 + end6 + end7 + end8 + end9 + end10 + end1
 # More Formatting
 formatter = "%r %r %r %r"
 print(formatter % (1, 2, 3, 4))
-print(formatter % ("One , two, three, four"))
+print(formatter % ("One", "two", "three", "four"))
 print(formatter % (True, False, False,True))
 print(formatter % (formatter, formatter, formatter,formatter))
 
 # Why did I use %r instead of %s?
+
+print("We have already used the %s and ssince it is a new section, we need to use a new letter")
+
+Fe1 = "D"
+Fe2 = "i"
+Fe3 = "v"
+Fe4 = "i"
+Fe5 = "n"
+Fe6 = "g"
+
+print(Fe1 + Fe2 + Fe3 + Fe4 + Fe5 + Fe6)
+
+
+
