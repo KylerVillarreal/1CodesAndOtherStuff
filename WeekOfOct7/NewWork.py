@@ -19,3 +19,10 @@ e = "a string with a right side."
 print(w + e)
 
 
+# More Stuff
+
+print("Mary hada little lamb.")
+print("Its fleece was what as %s." % 'snow')
+print("And everywhere that Mary went.")
+print("." * 10)
+
