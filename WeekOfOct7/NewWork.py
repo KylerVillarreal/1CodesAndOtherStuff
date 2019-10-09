@@ -50,7 +50,7 @@ print(formatter % (formatter, formatter, formatter,formatter))
 
 # Why did I use %r instead of %s?
 
-print("We have already used the %s and ssince it is a new section, we need to use a new letter")
+print("We have already used the %s and since it is a new section, we need to use a new letter")
 
 Fe1 = "D"
 Fe2 = "i"
@@ -61,5 +61,12 @@ Fe6 = "g"
 
 print(Fe1 + Fe2 + Fe3 + Fe4 + Fe5 + Fe6)
 
+# Time for some strange stuff in the world of printing...
+
+days = "Mon Tue Wed Thu Fri Sat Sun"
+months = "Ja\nFeb\nMar\nApr\nMay\nJun\nJul\nAug"
+
+print("Here are the days: ", days)
+print("Here are the months: ", months)
 
 
