@@ -72,8 +72,49 @@ print("Here are the months: ", months)
 print("""
 There's something going on here.
 With the double quotes
-We'll be able to type as much as we like.
-Even 4 lines if we want, or 5, or 6.
+I'll be able to type as much as we like.
+Even 4 lines or more.
 """)
 
+#What if I didn't like Jan being listed on the line with the rest of the
+# text and away from the other months? How could I fix that?
 
+# More escaping
+
+tabbyDog = "\tI'm tabbed in."
+persianDog = "I'm split\non a line."
+backslashDog = "I'm \\ a \\ cat."
+taskDog = """
+I'll make a list:
+\t* Dog food
+\t* Fishies
+\t* Dog\n\tWater
+"""
+
+print(tabbyDog)
+print(persianDog)
+print(backslashDog)
+print(taskDog)
+
+#Esacpe seq           what does it do?
+# \\
+# \'
+# \"
+# \a
+# \b
+# \f
+# \n
+# \N(name)
+# \r
+# \t
+# \uxxxx
+# \Uxxxxxxxx
+# \v
+# \ooo
+# \xhh
+# What does the following code do:
+# while true
+#      for i in ["/","-","|","\\","|"}:
+#          print("%s\r" % i, end='')
+
+# Can you replace """ with '''?
