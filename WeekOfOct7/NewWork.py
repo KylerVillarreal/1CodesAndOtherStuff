@@ -97,7 +97,7 @@ print(backslashDog)
 print(taskDog)
 
 #Esacpe seq           what does it do?
-# \\
+# \\                   Spaces out words
 # \'
 # \"
 # \a
@@ -106,7 +106,7 @@ print(taskDog)
 # \n
 # \N(name)
 # \r
-# \t
+# \t                   Makes tabbing space between charcters
 # \uxxxx
 # \Uxxxxxxxx
 # \v
@@ -118,3 +118,11 @@ print(taskDog)
 #          print("%s\r" % i, end='')
 
 # Can you replace """ with '''?
+
+
+# Asking Questions
+
+age = input("How old are you?")
+height = input("How tall are you?")
+
+print("So, you really %r old and %r tall? Wow..." % (age, height))
