@@ -126,3 +126,12 @@ age = input("How old are you?")
 height = input("How tall are you?")
 
 print("So, you really %r old and %r tall? Wow..." % (age, height))
+
+
+weight = input("How much do you weigh?")
+
+print("You weigh %s pounds? That's cool dude..." % weight)
+
+
+
+
