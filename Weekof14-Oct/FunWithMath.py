@@ -40,5 +40,17 @@ print(acc)
 # write a function to compute the Nth Fibonacci number, where N is a parameter
 #  You may assume that N will be greater than or equal to 3.
 
+acc = 0
+for k in range(1, 100):
+    acc = acc + k
+
+print(acc)
+
+acc = 0
+for q in range(1,50):
+    acc = acc + q
+
+print(acc)
+
 
 
