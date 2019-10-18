@@ -53,4 +53,52 @@ for q in range(1,50):
 print(acc)
 
 
+# A Monte Carlo Simulation
 
+import random
+
+print(random.random())
+
+# Boolean expressions
+# >  greater than
+# >= greater than or equal to
+# < less than
+# <= less than or equal to
+# == the same as [equal to]
+# != NOT equal to
+
+catWeight = 15
+print(catWeight != 15)
+tableWeight = 30
+
+# compound Boolean operators
+# and (both must be true or it will all be false if one is false)
+# or  (if one is true, it is considered true)
+# not (opposite, think like it's a negative)
+
+print(not catWeight < 20)
+
+
+# Decision making -- Selection statements
+a = 5
+b = 10
+c = 75
+
+if a <= b :
+    c = 45
+
+print(c)
+
+if a > b:
+    c = 45
+    if b > c:
+        a = 25
+    else:
+        a = -25
+else:
+    c = 1050
+    if b == a:
+        c = 25
+
+
+print(a, b, c)
