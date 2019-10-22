@@ -121,19 +121,45 @@ else:
             ans = 75
 print(ans)
 
-def montePi(numDarts):
+def showmontePi(numDarts):
+    scn = turtle.Screen()
+    t = turtle.Turtle()
+
+    scn.setworldcoordinates(-2, -2, 2, 2)
+
+    t.penup()
+    t.goto(-1, 0)
+    t.pendown()
+    t.goto(1, 0)
+
+    t.penup()
+    t.goto(0, 1)
+    t.pendown()
+    t.goto(0, -1)
 
     inCircle = 0
-
+    t.penup()
     for i in range(numDarts):
         x = random.random()
         y = random.random()
 
         distance = math.sqrt(x**2 + y**2)
+
+        t.goto(x, y)
         if distance <= 1:
             inCircle = inCircle + 1
+            t.color("blue")
+        else:
+            t.color("red")
+
+        t.dot()
 
     pi =inCircle / numDarts * 4
+    scn.exitonclick()
     return pi
+import turtle
+showmontePi(1000)
 
 print(montePi(10000))
+
+
