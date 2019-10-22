@@ -162,4 +162,9 @@ showmontePi(1000)
 
 print(montePi(10000))
 
+# My task:
+# Modify the simulation to plot points in the entire circle
+# You will have to adjust the calculated value of pi accordingly.
+
+
 
