@@ -68,10 +68,10 @@ else:
     # ljust         aStr.ljust(w)         Returns a left justified version of the string
     # rjust         aStr.rjust(w)         Returns a right justified version of the string
     # upper         aStr.upper()          Converts a string into upper case
-    # lower         aStr.lower()
-    # index         aStr.index(item)
-    # rindex        aStr.rindex(item)
-    # find          aStr.find(item)
+    # lower         aStr.lower()          Converts a string into lower case
+    # index         aStr.index(item)      Searches the string for a specified value and returns the position of where it was found
+    # rindex        aStr.rindex(item)     Searches the string for a specified value and returns the last position of where it was found
+    # find          aStr.find(item)       Searches the string for a specified value and returns the position of where it was found
     # rfind         aStr.rfind(item)
     # replace       aStr.replace(old, new)
 
