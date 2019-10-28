@@ -62,3 +62,23 @@ if "y" in name:
 else:
     print("The letter y is not in name")
 
+    # String Methods to investigate:
+    # Method        Use Example           Explanation
+    # center        aStr.center(w)        Returns a centered string
+    # ljust         aStr.ljust(w)         Returns a left justified version of the string
+    # rjust         aStr.rjust(w)         Returns a right justified version of the string
+    # upper         aStr.upper()          Converts a string into upper case
+    # lower         aStr.lower()
+    # index         aStr.index(item)
+    # rindex        aStr.rindex(item)
+    # find          aStr.find(item)
+    # rfind         aStr.rfind(item)
+    # replace       aStr.replace(old, new)
+
+# Character Functions
+
+print(ord('B'))
+
+print(chr(97+13))
+
+print(str(12548))
