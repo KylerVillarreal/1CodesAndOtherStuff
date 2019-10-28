@@ -69,11 +69,15 @@ else:
     # rjust         aStr.rjust(w)         Returns a right justified version of the string
     # upper         aStr.upper()          Converts a string into upper case
     # lower         aStr.lower()          Converts a string into lower case
-    # index         aStr.index(item)      Searches the string for a specified value and returns the position of where it was found
-    # rindex        aStr.rindex(item)     Searches the string for a specified value and returns the last position of where it was found
-    # find          aStr.find(item)       Searches the string for a specified value and returns the position of where it was found
-    # rfind         aStr.rfind(item)
-    # replace       aStr.replace(old, new)
+    # index         aStr.index(item)      Searches the string for a specified value and returns the position of where it
+    # was found
+    # rindex        aStr.rindex(item)     Searches the string for a specified value and returns the last position of
+    # where it was found
+    # find          aStr.find(item)       Searches the string for a specified value and returns the position of where it
+    # was found
+    # rfind         aStr.rfind(item)      Searches the string for a specified value and returns the last position of
+    # where it was found
+    # replace       aStr.replace(old, new)  Returns a string where a specified value is replaced with a specified value
 
 # Character Functions
 
@@ -82,3 +86,11 @@ print(ord('B'))
 print(chr(97+13))
 
 print(str(12548))
+
+# testing functions from mapper.py
+
+from mapper import *
+
+print(letterToIndex('P'))
+print(indexToLetter(10))
+
