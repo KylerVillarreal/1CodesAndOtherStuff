@@ -94,3 +94,4 @@ from mapper import *
 print(letterToIndex('P'))
 print(indexToLetter(10))
 
+
