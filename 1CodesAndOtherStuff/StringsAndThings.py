@@ -98,3 +98,4 @@ from Krypto import *
 
 print(scramble2Encrypt("GOOD MORNING LADIES AND GENTLEMAN"))
 
+print(scramble2Decrypt("ODMRIGLDE N ETEEO ONN AISADGNLMN"))
