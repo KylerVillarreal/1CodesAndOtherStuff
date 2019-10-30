@@ -34,6 +34,30 @@ def scramble2Decrypt(cipherText):
 # write a stripSpaces(text) function here
 
 # write a caesarEncrypt(plainText, shift)
-
 # write a caesarDecrypt(cipherText, shift)
+
+def caesarEncrypt(plainText):
+    evenChars = ""
+    oddChars = ""
+    charCount = 0
+    for ch in plainText:
+        if charCount % 2 == 0:
+            evenChars = evenChars + ch
+        else:
+            oddChars = oddChars + ch
+        charCount = charCount + 1
+    cipherText = oddChars + evenChars
+    return caesarEncrypt()
+
+def caesarDecrypt(cipherText):
+    halfLength = len(cipherText) // 2
+    evenChars = cipherText[halfLength:]
+    oddChars = cipherText[:halfLength]
+    plainText = ""
+    return caesarDecrypt()
+
+
+
+
+
 
