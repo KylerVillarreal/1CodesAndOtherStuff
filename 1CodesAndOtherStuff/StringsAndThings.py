@@ -100,5 +100,41 @@ print(scramble2Encrypt("GOOD MORNING LADIES AND GENTLEMAN"))
 
 print(scramble2Decrypt("ODMRIGLDE N ETEEO ONN AISADGNLMN"))
 
-print(caesarEncrypt("P svcl ibynlyz zv tbjo"))
-print(caesarDecrypt("I love watching movies"))
+lower = 'abcdefghijklmnopqrstuvwxyz'
+upper = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+
+def caesarEncrypt(plainText, shift):
+    cipherText = ""
+    for ch in plainText:
+        if ch in upper:
+            index = upper.find(ch)
+            nextIndex = (index + shift) % 26
+            cipherText += upper[nextIndex]
+        else:
+            index = lower.find(ch)
+            nextIndex = (index + shift) % 26
+            cipherText += lower[nextIndex]
+    return cipherText
+
+print(caesarEncrypt("I love to watch movies", 3))
+
+def caesarDecrypt(cipherText, shift):
+    cipherText = ""
+    for ch in cipherText:
+        if ch in upper:
+            index = upper.find(ch)
+            nextIndex = (index + shift) % 27
+            if nextIndex < 0:
+                nextIndex = 27 + nextIndex
+            cipherText += upper[nextIndex]
+        else:
+            index = lower.find(ch)
+            nextIndex = (index + shift) % 27
+            if nextIndex < 0:
+                nextIndex = 27 + nextIndex
+                cipherText += lower[nextIndex]
+        return cipherText
+print(caesarDecrypt("C rgpekn ku eqqn", 2))
+
+
+
