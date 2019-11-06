@@ -13,6 +13,29 @@ def archimedes(numSides):
     pi = polygonCircumference / 2
     return pi
 
+# Function returns the average of the first N numbers
+def average(N):
+    avg = 0
+    for x in range(1, N + 1):
+        avg = (avg + x)
+    return avg/N
+
+# Function returns N
+def factorial(N):
+    fact = 1
+    for x in range(2, N + 1):
+        fact = fact * x
+    return fact
+
+# Function returns the Nth term of the Fibonacci series
+def fibonacci(N):
+    acc0 = 1
+    acc1 = 2
+    for x in range(3, N+1):
+        temp = acc1
+        acc1 = acc0 + acc1
+        acc0 = temp
+    return(acc1)
 
 print(archimedes(8))
 print(archimedes(16))
@@ -31,13 +54,40 @@ for x in range(1, 6):
 print(acc)
 
 # compute the sum of the first 100 even numbers
+acc = 0
+for x in range(1,101):
+    acc = acc + x * 2
+    print(acc)
+
 # compute the sum of the first 50 odd numbers
+acc = 0
+for x in range(0,50):
+    acc = acc + (x * 2 + 1)
+    print(acc)
+
 # compute the average of the first 100 odd numbers
+acc = 0
+for x in range(0,100):
+    acc = acc + (x * 2 + 1)
+    acc = acc/100
+    print(acc)
+
 # write a function that returns the average of the first N numbers, where N is a parameter
+print(average(20))
 # write a function called factorial that computes the product of the first N numbers, where N is a parameter
+print(factorial(15))
 # Each number in the Fibonacci sequence is the sum of the previous two numbers.
 #  The first two numbers in the sequence are 1 and 1. Compute the 10th Fibonacci number
+N = 10
+acc0 = 1
+acc1 = 2
+for x in range(3, N+1):
+    temp = acc1
+    acc1 = acc0 + acc1
+    acc0 = temp
+    print(acc1)
 # write a function to compute the Nth Fibonacci number, where N is a parameter
+print(fibonacci(5))
 #  You may assume that N will be greater than or equal to 3.
 
 acc = 0
